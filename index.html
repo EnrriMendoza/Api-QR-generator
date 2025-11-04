@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escanear CDC - Factura Electrónica</title>
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Librerías externas -->
-  <script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.18.6/umd/index.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
-</head>
-<body>
-  <div class="scanner-container">
-    <video id="qr-reader" class="qr-reader-directo" playsinline></video>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escanear CDC</title>
+    <link rel="stylesheet" href="styles.css" />
 
-  <script src="scripts.js"></script>
-</body>
+    <!-- Librerías externas -->
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.18.6/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+  </head>
+  <body>
+    <div class="scanner-container">
+      <button id="start-scan" style="display:block;margin:20px auto;padding:10px 20px;">
+        📷 Activar cámara
+      </button>
+      <video id="qr-reader" class="qr-reader-directo" playsinline></video>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
